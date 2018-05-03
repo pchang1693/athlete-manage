@@ -12,8 +12,18 @@ create table sport (
   constraint pk_sport primary key (id)
 );
 
+create table team (
+  id                            integer auto_increment not null,
+  created_at                    timestamp,
+  updated_at                    timestamp,
+  name                          varchar(255),
+  constraint pk_team primary key (id)
+);
+
 
 # --- !Downs
 
 drop table if exists sport;
+
+drop table if exists team;
 

@@ -12,4 +12,7 @@ public class Team extends BaseModel {
     public String name;
 
 
+    public Team(String name) {
+        this.name = name;
+    }
 }
