@@ -1,7 +1,15 @@
 package models;
 
+import io.ebean.Finder;
+
+import javax.persistence.Entity;
 import java.util.List;
 
-public class Team {
+@Entity
+public class Team extends BaseModel {
+    public static Finder<Integer, Team> find = new Finder<>(Team.class);
     public List<Student> players;
+    public String name;
+
+
 }
